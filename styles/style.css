@@ -40,6 +40,24 @@ ol {
   list-style: none;
 }
 
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 34px;
+  color: white;
+  background-color: transparent;
+  border: solid currentColor 1px;
+  font-family: 'Fira Sans Condensed', sans-serif;
+font-weight: 700;
+font-size: 18px;
+line-height: 1;
+letter-spacing: 0;
+padding: 0;
+}
+
+
+
 .content {
   display: flex;
   gap: 30px;
@@ -64,6 +82,7 @@ ol {
   margin-top: 16px;
 }
 .search-form__fieldset {
+  max-height: 54px;
   width: 100%;
 }
 .search-form__fieldset-title {
@@ -83,15 +102,21 @@ ol {
 }
 .button {
 }
+
 .search-form__submit-button {
+  min-width: 194px;
+  align-self: flex-end;
 }
 
 .content__details {
+  display: flex;
+  flex-direction: column;
+  gap: 26px;
 }
 .title {
 display: inline-block;
-padding: 0 139px 26px 0;
-font-family: 'Oswald';
+padding: 0 139px 0 0;
+font-family: 'Oswald', sans-serif;
 font-weight: 700;
 font-style: normal;
 font-size: 75px;
@@ -105,8 +130,11 @@ text-transform: uppercase;
 }
 
 .content__list-container {
+  justify-self: flex-end;
   max-height: 298px;
   overflow-y: scroll;
+  padding-right: 3px;
+  padding-bottom: 2px;
 }
 
 .content__list {
@@ -122,31 +150,52 @@ text-transform: uppercase;
 }
 .cards-list-item-template {
 }
-.content__list-item {
-}
 
-.content__list-item:not(:last-child) {
-    margin-bottom: 30px;
+.content__list-item {
+  margin-bottom: 30px;
 }
 
 .content__card-link {
+  text-decoration: none;
 }
 .content__video-card {
   display: flex;
+  justify-content: space-between;
+
 }
 .content__video-card-description-container {
+  width: 196px;
+  color: white;
+  letter-spacing: 0; 
 }
 .content__video-card-title {
+  font-family: 'Oswald', sans-serif;
+font-weight: 700;
+font-size: 30px;
+line-height: 1;
+text-transform: uppercase;
+  overflow: hidden;
+text-overflow: ellipsis;
+
 }
 .content__video-card-description {
+font-weight: 400;
+line-height: 16.2px;
+  overflow: hidden;
+text-overflow: ellipsis;
+
+
 }
 .content__video-card-thumbnail {
+  width: 194px;
+  height: 103px;
 }
 .more-button-template {
 }
-.button {
-}
+
 .more-button {
+  width: calc(100% - 2px);
+  margin-left: 2px;
 }
 .error-template {
 }
