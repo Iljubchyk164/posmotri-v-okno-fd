@@ -68,7 +68,7 @@ ol {
 .button:hover {
   text-decoration: underline;
   cursor: pointer;
-} 
+}
 
 .button:active {
   background-color: #545050;
@@ -81,12 +81,11 @@ ol {
 }
 
 .result {
-  padding-top: 78px;
+  padding-top: 76px;
 }
 
 .result__video-container {
   position: relative;
-
 }
 
 .error-template {
@@ -102,7 +101,7 @@ ol {
 .search-form {
   display: flex;
   gap: 40px;
-  margin-top: 16px;
+  margin-top: 12px;
 }
 .search-form__fieldset {
   max-height: 54px;
@@ -137,7 +136,7 @@ ol {
 .search-form__label-text:hover {
   text-decoration: underline;
   cursor: pointer;
-} 
+}
 
 .search-form__textfield {
   min-height: 27px;
@@ -234,7 +233,6 @@ ol {
   display: flex;
   justify-content: space-between;
 }
-
 
 .content__video-card:active {
   background-color: #545050;
